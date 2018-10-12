@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd">
+		
+	<bean id="processDao" class="com.ajdbxt.dao.impl.Process.ProcessDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="processPoliceDao" class="com.ajdbxt.dao.impl.Process.ProcessPoliceDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="processDepartmentDao" class="com.ajdbxt.dao.impl.Process.ProcessDepartmentDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="processInfoDao" class="com.ajdbxt.dao.impl.Process.ProcessInfoDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="processService" class="com.ajdbxt.service.impl.Process.ProcessServiceImpl">
+		<property name="processDao" ref="processDao"></property>
+		<property name="processInfoDao" ref="processInfoDao"></property>
+		<property name="processPoliceDao" ref="processPoliceDao"></property>
+		<property name="processDepartmentDao" ref="processDepartmentDao"></property>
+	</bean>
+	<bean id="processInfoService" class="com.ajdbxt.service.impl.Process.ProcessInfoServiceImpl">
+		<property name="processDao" ref="processDao"></property>
+		<property name="processInfoDao" ref="processInfoDao"></property>
+		<property name="processPoliceDao" ref="processPoliceDao"></property>
+		<property name="processDepartmentDao" ref="processDepartmentDao"></property>
+	</bean>
+	<bean id="processAction" class="com.ajdbxt.action.Process.ProcessAction" scope="prototype">
+		<property name="processService" ref="processService"></property>
+		<property name="processInfoService" ref="processInfoService"></property>
+	</bean>
+</beans>

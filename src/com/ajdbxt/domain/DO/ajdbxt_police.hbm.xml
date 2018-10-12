@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-5-2 23:19:39 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.ajdbxt.domain.DO.ajdbxt_police" table="AJDBXT_POLICE">
+        <id name="ajdbxt_police_id" type="java.lang.String">
+            <column name="ajdbxt_police_id" />
+            <generator class="assigned" />
+        </id>
+        <property name="police_serial_number" type="java.lang.String">
+            <column name="police_serial_number" />
+        </property>
+        <property name="police_password" type="java.lang.String">
+            <column name="police_password" />
+        </property>
+        <property name="police_name" type="java.lang.String">
+            <column name="police_name" />
+        </property>
+        <property name="police_department" type="java.lang.String">
+            <column name="police_department" />
+        </property>
+        <property name="police_legaler" type="java.lang.String">
+            <column name="police_legaler" />
+        </property>
+        <property name="police_duty" type="java.lang.String">
+            <column name="police_duty" />
+        </property>
+        <property name="police_phone_number" type="java.lang.String">
+            <column name="police_phone_number" />
+        </property>
+        <property name="police_gmt_create" type="java.lang.String">
+            <column name="police_gmt_create" />
+        </property>
+        <property name="police_gmt_modify" type="java.lang.String">
+            <column name="police_gmt_modify" />
+        </property>
+        <property name="police_power" type="java.lang.String">
+            <column name="police_power" />
+        </property>
+    </class>
+</hibernate-mapping>

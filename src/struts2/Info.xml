@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+
+	 <package name="Info" namespace="/info" extends="struts-default">
+	 	<interceptors>
+			<interceptor name="myInterceptor" class="util.MyInterceptor">
+			</interceptor>
+		</interceptors>
+		<action name="Info_*" class="infoAction"
+			method="{1}">
+			<result name="page_CaseInfo">/WEB-INF/view/info/CaseInfoInput.jsp
+			</result>
+			<result name="login" type="redirect">/login.jsp</result>
+			<result name="page_CaseDetails">/WEB-INF/view/info/CaseDetails.jsp
+			</result>
+			<result name="page_mobileCaseList">/WEB-INF/view/info/mobile_caseList.jsp
+			</result>
+			<result name="page_mobile_caseOneDetails">/WEB-INF/view/info/mobile_caseOneDetails.jsp
+			</result>
+			<result name="page_mobile_caseAdd">/WEB-INF/view/info/mobile_caseadd.jsp
+			</result>
+			<result name="page_mobile_caseProcess">/WEB-INF/view/info/mobile_caseProcess.jsp
+			</result>
+			<result name="page_mobile_caseUpdate">/WEB-INF/view/info/mobile_caseOneUpdate.jsp
+			</result>
+			<result name="interceptorsLogin" type="redirect">/</result>
+			<interceptor-ref name="myInterceptor"></interceptor-ref>
+			<interceptor-ref name="defaultStack"></interceptor-ref>
+		</action>
+	</package> 
+
+</struts>

@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-8-21 15:36:37 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.ajdbxt.domain.DO.ajdbxt_info" table="AJDBXT_INFO">
+        <id name="ajdbxt_info_id" type="java.lang.String">
+            <column name="AJDBXT_INFO_ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="info_name" type="java.lang.String">
+            <column name="INFO_NAME" />
+        </property>
+        <property name="info_category" type="java.lang.String">
+            <column name="INFO_CATEGORY" />
+        </property>
+        <property name="info_department" type="java.lang.String">
+            <column name="INFO_DEPARTMENT" />
+        </property>
+        <property name="info_catch_time" type="java.lang.String">
+            <column name="INFO_CATCH_TIME" />
+        </property>
+        <property name="info_main_police" type="java.lang.String">
+            <column name="INFO_MAIN_POLICE" />
+        </property>
+        <property name="info_assistant_police_one" type="java.lang.String">
+            <column name="INFO_ASSISTANT_POLICE_ONE" />
+        </property>
+        <property name="info_assistant_police_two" type="java.lang.String">
+            <column name="INFO_ASSISTANT_POLICE_TWO" />
+        </property>
+        <property name="info_department_legal_member" type="java.lang.String">
+            <column name="INFO_DEPARTMENT_LEGAL_MEMBER" />
+        </property>
+        <property name="info_department_captain" type="java.lang.String">
+            <column name="INFO_DEPARTMENT_CAPTAIN" />
+        </property>
+        <property name="info_legal_team_member" type="java.lang.String">
+            <column name="INFO_LEGAL_TEAM_MEMBER" />
+        </property>
+        <property name="info_bureau_leader" type="java.lang.String">
+            <column name="INFO_BUREAU_LEADER" />
+        </property>
+        <property name="info_gmt_ceate" type="java.lang.String">
+            <column name="INFO_GMT_CEATE" />
+        </property>
+        <property name="info_gmt_modify" type="java.lang.String">
+            <column name="INFO_GMT_MODIFY" />
+        </property>
+        <property name="info_nonage" type="java.lang.String">
+            <column name="INFO_NONAGE" />
+        </property>
+        <property name="info_inform_leaders" type="java.lang.String">
+            <column name="INFO_INFORM_LEADERS" />
+        </property>
+        <property name="info_special_person" type="java.lang.String">
+            <column name="INFO_SPECIAL_PERSON" />
+        </property>
+        <property name="info_special_case" type="java.lang.String">
+            <column name="INFO_SPECIAL_CASE" />
+        </property>
+    </class>
+</hibernate-mapping>

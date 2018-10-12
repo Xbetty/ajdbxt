@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="statisticAction" class="com.ajdbxt.action.Total.StatisticAction"
+		scope="prototype">
+		<property name="statisticService" ref="statisticService"></property>
+	</bean>
+
+	<bean id="statisticService" class="com.ajdbxt.service.impl.Total.StatisticServiceImpl">
+		<property name="statisticDao" ref="statisticDao"></property>
+	</bean>
+
+	<bean id="statisticDao" class="com.ajdbxt.dao.impl.Total.StatisticDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	
+	<!-- <bean id="a" class="com.ajdbxt.service.impl.Total.TestStatisticService">
+		<property name="statisticService" ref="statisticService"></property>
+	</bean> -->
+
+
+</beans>

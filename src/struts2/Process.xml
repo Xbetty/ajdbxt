@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="test" extends="struts-default" namespace="/process">
+		<interceptors>
+			<interceptor name="myInterceptor" class="util.MyInterceptor">
+			</interceptor>
+		</interceptors>
+		<action name="*ProcessAction" class="processAction" method="{1}">
+			<!-- <result name="success">/processTest.jsp</result>
+			<result name="false">/somethingBad.jsp</result> -->
+
+			<result name="login" type="redirect">/login.jsp</result>
+			<result name="page_list_CaseProcess">/WEB-INF/view/process/CaseProcess.jsp</result>
+			<result name="page_CaseProcessInfo">/WEB-INF/view/process/CaseProcessInfo.jsp</result>
+			<result name="interceptorsLogin" type="redirect">/</result>
+			<interceptor-ref name="myInterceptor"></interceptor-ref>
+			<interceptor-ref name="defaultStack"></interceptor-ref>
+		</action>
+	</package>
+</struts>

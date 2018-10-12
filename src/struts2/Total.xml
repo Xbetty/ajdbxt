@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="Total" namespace="/total" extends="struts-default">
+		<interceptors>
+			<interceptor name="myInterceptor" class="util.MyInterceptor">
+			</interceptor>
+		</interceptors>
+		<action name="Total_*" class="com.ajdbxt.action.Total.StatisticAction"
+			method="{1}">
+			<result name="page_listDepartmentCaseStatistics">/WEB-INF/view/total/ajdbxt_total_department.jsp</result>
+			<result name="page_listPoliceCaseStatistic">/WEB-INF/view/total/ajdbxt_total.jsp</result>
+			<result name="mobile_departmentStatistic">/WEB-INF/view/total/mobile_total_department.jsp</result>
+			<result name="mobile_policeStatistic">/WEB-INF/view/total/mobile_total.jsp</result>
+			<result name="page_caseInfoList">/WEB-INF/view/total/ajdbxt_total_link.jsp</result>
+			<result name="mobile_caseInfoList">/WEB-INF/view/total/mobile_total_link.jsp</result>
+			<result name="login" type="redirect">/login.jsp</result>
+			<result name="interceptorsLogin" type="redirect">/</result>
+			<interceptor-ref name="myInterceptor"></interceptor-ref>
+			<interceptor-ref name="defaultStack"></interceptor-ref>
+		</action>
+	</package>
+
+ 
+ </struts>

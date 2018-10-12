@@ -1,0 +1,171 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018??5??19?? ????10:28:03 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.ajdbxt.domain.DO.ajdbxt_process" table="ajdbxt_process">
+        <id name="ajdbxt_process_id" type="java.lang.String">
+            <column name="ajdbxt_process_id" />
+            <generator class="assigned" />
+        </id>
+        <property name="process_case_id" type="java.lang.String">
+            <column name="process_case_id" />
+        </property>
+        <property name="process_lengthen_subpoena" type="java.lang.String">
+            <column name="process_lengthen_subpoena" />
+        </property>
+        <property name="process_authenticate" type="java.lang.String">
+            <column name="process_authenticate" />
+        </property>
+        <property name="process_case_goods" type="java.lang.String">
+            <column name="process_case_goods" />
+        </property>
+        <property name="process_detention" type="java.lang.String">
+            <column name="process_detention" />
+        </property>
+        <property name="process_other" type="java.lang.String">
+            <column name="process_other" />
+        </property>
+        <property name="process_penalty" type="java.lang.String">
+            <column name="process_penalty" />
+        </property>
+        <property name="process_apply_right" type="java.lang.String">
+            <column name="process_apply_right" />
+        </property>
+        <property name="process_question_time_out" type="java.lang.String">
+            <column name="process_question_time_out" />
+        </property>
+        <property name="process_goods_in_lib" type="java.lang.String">
+            <column name="process_goods_in_lib" />
+        </property>
+        <property name="process_question" type="java.lang.String">
+            <column name="process_question" />
+        </property>
+        <property name="process_score" type="java.lang.Double">
+            <column name="process_score" />
+        </property>
+        <property name="process_captain_check" type="java.lang.String">
+            <column name="process_captain_check" />
+        </property>
+        <property name="process_file_hand" type="java.lang.String">
+            <column name="process_file_hand" />
+        </property>
+        <property name="process_file_hand_two" type="java.lang.String">
+            <column name="process_file_hand_two" />
+        </property>
+        <property name="process_file_hand_three" type="java.lang.String">
+            <column name="process_file_hand_three" />
+        </property>
+        <property name="process_case_end" type="java.lang.String">
+            <column name="process_case_end" />
+        </property>
+        <property name="process_gmt_create" type="java.lang.String">
+            <column name="process_gmt_create" />
+        </property>
+        <property name="process_gmt_modify" type="java.lang.String">
+            <column name="process_gmt_modify" />
+        </property>
+        <property name="process_question_list" type="java.lang.Integer">
+            <column name="process_question_list" />
+        </property>
+        <property name="process_search_result_one" type="java.lang.String">
+            <column name="process_search_result_one" />
+        </property>
+        <property name="process_search_result_two" type="java.lang.String">
+            <column name="process_search_result_two" />
+        </property>
+        <property name="process_is_rollback" type="java.lang.String">
+            <column name="process_is_rollback" />
+        </property>
+        <property name="process_administrativ_warning" type="java.lang.String">
+            <column name="process_administrativ_warning" />
+        </property>
+        <property name="process_community_abandon_drug" type="java.lang.String">
+            <column name="process_community_abandon_drug" />
+        </property>
+        <property name="process_mandatory_abandon_drug" type="java.lang.String">
+            <column name="process_mandatory_abandon_drug" />
+        </property>
+        <property name="process_lengthen_criminal_detention" type="java.lang.String">
+            <column name="process_lengthen_criminal_detention" />
+        </property>
+        <property name="process_force_measure_one" type="java.lang.String">
+            <column name="process_force_measure_one" />
+        </property>
+        <property name="process_force_measure_two" type="java.lang.String">
+            <column name="process_force_measure_two" />
+        </property>
+        <property name="process_force_measure_three" type="java.lang.String">
+            <column name="process_force_measure_three" />
+        </property>
+        <property name="process_force_measure_four" type="java.lang.String">
+            <column name="process_force_measure_four" />
+        </property>
+        <property name="process_put_on_record" type="java.lang.String">
+            <column name="process_put_on_record" />
+        </property>
+        <property name="process_evidence_to_upload" type="java.lang.String">
+            <column name="process_evidence_to_upload" />
+        </property>
+        <property name="process_evidence_to_upload_affirm" type="java.lang.String">
+            <column name="process_evidence_to_upload_affirm" />
+        </property>
+        <property name="process_evidence_to_upload_two" type="java.lang.String">
+            <column name="process_evidence_to_upload_two" />
+        </property>
+        <property name="process_evidence_to_upload_two_affirm" type="java.lang.String">
+            <column name="process_evidence_to_upload_two_affirm" />
+        </property>
+        <property name="process_question_list_two" type="java.lang.Integer">
+            <column name="process_question_list_two" />
+        </property>
+        <property name="process_question_two" type="java.lang.String">
+            <column name="process_question_two" />
+        </property>
+        <property name="process_casefile_auxiliary" type="java.lang.String">
+            <column name="process_casefile_auxiliary" />
+        </property>
+        <property name="process_casefile_auxiliary_affirm" type="java.lang.String">
+            <column name="process_casefile_auxiliary_affirm" />
+        </property>
+        <property name="process_fileback_day" type="java.lang.Integer">
+            <column name="process_fileback_day" />
+        </property>
+        <property name="process_fileback_day_two" type="java.lang.Integer">
+            <column name="process_fileback_day_two" />
+        </property>
+        <property name="process_fileup_day" type="java.lang.Integer">
+            <column name="process_fileup_day" />
+        </property>
+        <property name="process_evidence_time_out_law" type="java.lang.String">
+            <column name="process_evidence_time_out_law" />
+        </property>
+        <property name="process_evidence_time_out_police" type="java.lang.String">
+            <column name="process_evidence_time_out_police" />
+        </property>
+        <property name="process_question_difference" type="java.lang.String">
+            <column name="process_question_difference" />
+        </property>
+        <property name="process_file_up_time_out_law" type="java.lang.String">
+            <column name="process_file_up_time_out_law" />
+        </property>
+        <property name="process_file_up_time_out_police" type="java.lang.String">
+            <column name="process_file_up_time_out_police" />
+        </property>
+        <property name="process_goods_time_out_law" type="java.lang.String">
+            <column name="process_goods_time_out_law" />
+        </property>
+        <property name="process_goods_time_out_police" type="java.lang.String">
+            <column name="process_goods_time_out_police" />
+        </property>
+        <property name="process_casefile_auxiliary_law" type="java.lang.String">
+            <column name="process_casefile_auxiliary_law" />
+        </property>
+        <property name="process_casefile_auxiliary_police" type="java.lang.String">
+            <column name="process_casefile_auxiliary_police" />
+        </property>
+        <property name="process_file_back_time_out" type="java.lang.String">
+            <column name="process_file_back_time_out" />
+        </property>
+    </class>
+</hibernate-mapping>
